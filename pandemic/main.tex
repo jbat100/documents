@@ -12,6 +12,12 @@
 \usepackage[pdftex,linkcolor=blue,pdfborder={0 0 0}]{hyperref} % Format links for pdf
 \usepackage{calc} % To reset the counter in the document after title page
 \usepackage{enumitem} % Includes lists
+\usepackage[autostyle]{csquotes}
+\DeclareQuoteStyle[quotes]{french}
+  {\itshape\mkfrenchopenquote{\guillemotleft}}
+  {\mkfrenchclosequote{\guillemotright}}
+  {\itshape\textquotedblleft}
+  {\textquotedblright}
 
 \frenchspacing % No double spacing between sentences
 \linespread{1.2} % Set linespace
@@ -24,6 +30,7 @@
 \usepackage{sectsty}
 \sectionfont{\fontsize{17}{15}\selectfont}
 
+\usepackage[square,numbers]{natbib}
 
 \title{How I Lost Faith in our Institutions}
 \author{Jonathan B. A. Thorpe}
@@ -37,11 +44,13 @@ pdftitle = {},
 pdfauthor = {},
 colorlinks = true,
 urlcolor=[rgb]{0,0.5,0.5},
-linkcolor=[rgb]{0,0.5,0.5}
+linkcolor=[rgb]{0,0.5,0.5},
+citecolor=[rgb]{0,0.5,0.5}
 }
 
 \setlength{\parindent}{20pt}
 \setlength{\parskip}{1em}
+
 
 %-----------------------
 % Begin document
@@ -56,7 +65,7 @@ I used to believe that all this was inevitable, that we did our best. There were
 
 It started in the summer of 2021, I heard an episode of the Joe Rogan Experience with Bret Weinstein and Pierre Kory who were talking about repurposed drugs for prophylaxis and therapeutics, which supposedly had the power to end the pandemic whenever we chose to deploy it at scale. I was sceptical, surely we would have done it if we could. I put it in a corner of my mind. I’d been listening to Bret Weinstein speaking on a broad range of topics for a while, and he always impressed me with his refreshing combination of open mindedness and careful, serious scientific rigour. In a world which seemed to loose it’s grip his felt like a voice of reason, striking nuance between the extremes. After reading a number of articles which seemed to categorically discard Ivermectin as a potential help, I decided to forget about it. Even Merck who manufacture the drug said it didn’t work and warned against using it. Bret Weinstein could be wrong, like everyone, and on this one he probably was.
 
-A few month later I heard that Oxford University had added Ivermectin to their PRINCIPLE trial. I started wondering why, this drug which I’d read was not only useless in treating COVID-19, but was also dangerous and used as a horse dewormer would be investigated by extremely competent people. So I went back to the episode I heard, and listened to a few more episodes including Robert Malone and Peter McCollough. These people were described by the mainstream media as spreading misinformation and yet seemed extremely intelligent, well meaning and could not have been more qualified. So I decided to start systematically fact checking them, as well as the dominant narratives. It was quite a ride, and overall they have proved to be the most valuable source of information I’ve had throughout this pandemic.
+A few month later I heard that Oxford University had \href{https://www.bbc.com/news/health-57570377}{added Ivermectin to their PRINCIPLE trial}. I started wondering why, this drug which I’d read was not only useless in treating COVID-19, but was also dangerous and used as a horse dewormer would be investigated by extremely competent people. So I went back to the episode I heard, and listened to a few more episodes including Robert Malone and Peter McCollough. These people were described by the mainstream media as spreading misinformation and yet seemed extremely intelligent, well meaning and could not have been more qualified. So I decided to start systematically fact checking them, as well as the dominant narratives. It was quite a ride, and overall they have proved to be the most valuable source of information I’ve had throughout this pandemic.
 
 \section*{The only solutions were the ones we were allowed}
 
@@ -66,7 +75,7 @@ These large trials are expensive, tens of millions of dollars. The only entities
 
 We briefly heard about vitamin D, hydroxychloroquine, ivermectin and many other potential avenues of investigation, but these were quickly and neatly tidied up by our legacy and social media. They were systematically discarded, debunked and their proponents were paraded as clowns, lunatics, conspiracy theorists. No large government funded trials or shortcuts and exceptions for them, only scientific scepticism, journalistic derision and public indifference. Any solution would need to be new and above all, corporate. Our arsenal of public domain tools were declared useless by the deciders. There were no monthly reviews of medical evidence from people on the front line, just death counts and prayers.
 
-Of course another solution was needed, because Remdesivir, despite its huge price tag and serious side effects, didn’t significantly reduce mortality. So the attention turned to vaccines. We waited for our saviours to develop them in our domestic prison cells. The familiar pattern of public tax payer money funding products for private profits, had an additional twist. The liability for adverse effects would not be theirs to bare and governments around the world would enforce their use. A corporate paradise. Safety procedures were short circuited again, citizens were given the choice between self imprisonment, triweekly punitive nose rape or experimental vaccines. Workers, including exhausted front line medics were faced with obligatory vaccination or starvation. People started policing each other. We needed the boosters, and super boosters, adolescents, children. One. single. solution.
+Of course another solution was needed, because Remdesivir, despite its huge price tag and serious side effects, didn’t significantly reduce mortality (\cite{Ader21}). So the attention turned to vaccines. We waited for our saviours to develop them in our domestic prison cells. The familiar pattern of public tax payer money funding products for private profits, had an additional twist. The liability for adverse effects would not be theirs to bare and governments around the world would enforce their use. A corporate paradise. Safety procedures were short circuited again, citizens were given the choice between self imprisonment, triweekly punitive nose rape or experimental vaccines. Workers, including exhausted front line medics were faced with obligatory vaccination or starvation. People started policing each other. We needed the boosters, and super boosters, adolescents, children. One. single. solution.
 
 Mounting evidence against systematic repeated total vaccination and any information which could lead to vaccine scepticism was systematically classified as misinformation by mainstream and social media platforms. Whether they were true or not was irrelevant. Truth was redefined, vaccines were the only truth. Self organised groups with hundreds of thousands of adverse effect sufferers were disappeared. Crushing evidence from around the world censored and firewalled to ensure compliance. 
 
@@ -76,7 +85,7 @@ While we were busy worrying about when the vaccines would finally save us, elsew
 
 Uttar Pradesh (the most populous state in India) replicated results from numerous small scale studies showing insanely good results for prophylactic Ivermectin and Vitamin D and decided to base their approach on these results using targeted med-kits for positive tests and contact cases. Their government declared that this helped them keep mortality down to a surprising extent. They were praised by the WHO who referred to their med-kits without referring to what was inside, presumably because it went against their own recommendations. Although Uttar Pradesh is less vaccinated and more densely populated than the second most populous state in India (Maharashtra), their mortality rate is 11 times lower overall and has been throughout the pandemic. This was not considered worth any attention by our scientific, pharmaceutical, media and governmental institutions. An irrational reaction by any measure.
 
-The third state in India (by population), Bahir followed Uttar Pradesh’s lead and obtained similar breathtaking results. Elsewhere in India, the two states of Uttarakhand and Kerala gave us a natural experiment of unusual magnitude. Uttarakhand decided to deploy prophylactic Ivermectin as a response to the Delta wave in may 2021, their daily mortality went down to zero within two month and has essentially stayed there ever since. Kerala conversely was using Ivermectin up to summer 2021, when they succumbed to pressure from the WHO in the middle of the Delta wave. They dropped their protocol it in favour of the expensive and ineffective Remdesivir. Their mortality rate has exploded and remained extremely high ever since. No one at the WHO thought this was an indication that their recommendation might have been a factor.   
+The third state in India (by population), Bahir followed Uttar Pradesh’s lead and obtained similar breathtaking results. Elsewhere in India, the two states of Uttarakhand and Kerala gave us a natural experiment of unusual magnitude. Uttarakhand decided to deploy prophylactic Ivermectin as a response to the Delta wave in may 2021, their daily mortality went down to zero within two month and has essentially stayed there ever since. Kerala conversely was using Ivermectin up to summer 2021, when they succumbed to pressure from the WHO, the NIH and the FDA in the middle of the Delta wave. They dropped their protocol it in favour of the expensive and ineffective Remdesivir (\cite{Bose2021-xv}). Their mortality rate has exploded and remained extremely high ever since. No one at the WHO thought this was an indication that their recommendation might have been a factor.   
 
 Peru offered another large scale real world experiment in ivermectin deployment. The mortality for over 60 year olds was cut 14 fold in three month after the introduction of ivermectin, then jumped back up 13 fold once the new president restricted its use. Per state analysis for 25 states showed the effects to be tied to deployment date and quantity with a very high significance. Africa, where a number of countries have been using ivermectin systematically for over 35 years to treat an array of different tropical diseases to great effect provided an accidental demonstration of ivermectin’s effectiveness. Based on a comparative study of African state which used and didn’t use ivermectin, the chairman of the Tokyo Metropolitan Medical Association decided to allow doctors to use ivermectin off label (while not officially recommending it as it would be in direct defiance of the WHO recommendations) to deal with an uncontrollable situation. As expected the mortality rates dropped to zero within three months.
 
@@ -88,18 +97,54 @@ The narrative surrounding the pandemic has been relentlessly hammered into our m
 
 \subsection*{Ivermectin}
 
-The mainstream media depiction of ivermectin is that of a horse dewormer, dangerous to humans,  shown to be ineffective by many scientific studies. Conspiracy theorists have miraculously convinced many of it’s efficacy against the recommendations of scientists, the WHO and the FDA. It's possible use as a prophylactic and early therapeutic was more implausible than flat earth theories based on the tone of hijacked wikipedia pages. 
+The mainstream media depiction of ivermectin is that of a horse dewormer, dangerous to humans, shown to be ineffective by many scientific studies. Conspiracy theorists have miraculously convinced many of it’s efficacy against the recommendations of scientists, the WHO and the FDA. Textbook misinformation. Ivermectin has been widely used in humans since 1987 with an exceptional safety record (\cite{Smit2016-fq}, \cite{Crump2011-ev}). It won its inventor the Nobel Prize and is on the WHO’s list of essential medicines (\cite{Crump2017-qg}). It has essentially eradicated a number of tropical diseases in Africa, and was so effective, cheap and safe that Merck created a large scale \href{https://www.merck.com/stories/mectizan/}{donation program with over 4 billion doses distributed over 35 years}. Presumably they didn't think it was dangerous until COVID-19 hit and then changed their minds despite studies \href{https://academic.oup.com/ofid/article/8/Supplement_1/S365/6450290}{confirming the absence of adverse effects for treating it}. One might think that Merck might be deliberately downplaying Ivermectin in favour of Molnupiravir which sells  for \$700. \href{https://www.bloomberg.com/news/articles/2021-12-08/merck-s-mrk-covid-pill-must-first-overcome-anti-vax-ivermectin-misinformation}{Conspiracy theory} of course.
 
-Textbook misinformation. Ivermectin has been widely used in humans since 1987 with an exceptional safety record. It won its inventor the Nobel Prize and is on the WHO’s list of essential medicines. It has essentially eradicated a number of tropical diseases in Africa, and was so effective, cheap and safe that Merck created a large scale donation program with over 4 billion doses distributed over 35 years (presumably they didn't think it was dangerous until COVID-19 hit and then changed their minds despite studies \href{https://academic.oup.com/ofid/article/8/Supplement_1/S365/6450290}{confirming the absence of adverse effects for treating it}). 
+Ivermectin was identified as an extremely promising prophylactic and therapeutic for COVID-19 early on and many preliminary studies suggested very high effectiveness. These never translated into the large scale RCT necessary for wide scale adoption however as nobody had the financial incentive to perform them, while big Pharma had every incentive to discourage further investigation. Meta-analyses (\cite{Popp21}) were routinely cited as demonstrating the insignificance of its effect, when in fact they noted the poor quality of the data (insufficient sample size and inaccuracies) and emphasised the urgency of large RCT given the promising nature of the results. A few poor quality papers were used to discredit Ivermectin as a whole. Papers reporting large scale effects in test runs have been pulled based on \href{https://healthpolicy-watch.news/mexico-city-officials-in-row-over-misleading-paper-to-justify-its-ivermectin-drive/}{ethical concerns and lack of informed consent}, which clearly is very big issue for highly safe repurposed drugs but not experimental vaccines. 
 
-It was identified as an extremely promising prophylactic and therapeutic for COVID-19 early on and many preliminary studies suggested very high effectiveness. These never translated into the large scale RCT necessary for wide scale adoption however as nobody had the financial incentive to perform them, while big Pharma had every incentive to discourage further investigation. Meta-analyses were routinely cited as demonstrating the insignificance of its effect, when in fact they noted the poor quality of the data (insufficient sample size and inaccuracies) and emphasised the urgency of large RCT given the promising nature of the results. Papers reporting large scale effects in test runs have been pulled based on \href{https://healthpolicy-watch.news/mexico-city-officials-in-row-over-misleading-paper-to-justify-its-ivermectin-drive/}{ethical concerns and lack of informed consent}, which clearly is very big issue for highly safe repurposed drugs but not experimental vaccines. We should be so grateful for their concern.
-
-But the papers and reports keep coming in, and justifying the will of so many doctors and scientist to push for a drug which they have no financial (or other) interest in promoting and everything to lose from the backlash is becoming increasingly difficult. A number of prestigious institutions are in the process of performing the large RCT trials, but without the exceptional treatment which was afforded to Remdesivir and the usual hurdles of publicly funded research (funding, ethics, peer reviews etc...), the timescale is in years and of no help in the context of a pandemic. Given the outstanding safety record of ivermectin, the risk benefit ratio of large scale test deployments is essentially unarguable and would have settled the issue, like so many countries less prone to corporate influence have done.
+But the papers and reports keep coming in (\cite{Bryant2021-ww}), and justifying the will of so many independent doctors and scientist (amongst many others, \href{Bryant2021-ww}{BIRD}, \href{https://covid19criticalcare.com/ivermectin-in-covid-19/}{FLCCC} which include some of the most cited physicians in the world) to push for a drug which they have no financial (or other) interest in promoting and everything to lose from the backlash is becoming increasingly difficult. A number of prestigious institutions are in the process of performing the large RCT trials, but without the exceptional treatment which was afforded to Remdesivir and the usual hurdles of publicly funded research (funding, ethics, peer reviews etc...), the timescale is in years and of no help in the context of a pandemic. Given the outstanding safety record of ivermectin, the risk benefit ratio of large scale test deployments is essentially unarguable and would have settled the issue, like so many countries less prone to corporate influence have done.
 
 \subsection*{Vitamin D}
 
+Addressing vitamin D deficiency showed great promise with many studies suggesting \href{https://c19vitamind.com/}{very significant effects} as early as summer 2020. Scepticism in the media \href{https://www.theguardian.com/world/2020/jun/29/no-evidence-that-taking-vitamin-d-prevents-coronavirus-say-experts}{didn't wait}, once again failing to distinguish between insignificant effect sizes and insufficient data quality. Large scale studies again absent due to lack of financial incentive, systematically positive accumulated evidence was acted on in a number of countries, but western media turned its back on it and started playing the \href{https://www.theguardian.com/world/2021/mar/09/vitamin-d-supplements-may-offer-no-covid-benefits-data-suggests}{uncertainty card}. On occasion, the lack of government action was \href{https://www.theguardian.com/lifeandstyle/2021/jan/10/does-vitamin-d-combat-covid}{pointed out} with nowhere near the clarity and insistence required to have an effect.
+
+Unlike ivermectin, vitamin D is so widely used and available in western countries that misrepresenting its safety profile was not an option. So stalling at every possible occasion was to be the approach. Papers where retracted because they did not satisfy the gold standard. The media made sure people didn't notice, the usual fake miracle drug and conspiracy routine. Eventually the studies became \href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0263069}{impossible to dismiss}, with over a thousand patients and 14 fold effects. So western scepticism turned to silence, Israeli press \href{https://www.timesofisrael.com/israeli-study-offers-strongest-proof-yet-of-vitamin-ds-power-to-fight-covid/}{doing the work}. 
+
+Vitamin D deficiency isn't exactly rare, 40 percent in the UK, and crucially \href{https://www.cooperinstitute.org/2019/09/24/african-americans-at-greatest-risk-of-vitamin-d-deficiency}{double in African Americans}. Made worse by lockdowns which disproportionally forced vulnerable populations indoors. It was identified as a \href{https://pubmed.ncbi.nlm.nih.gov/33546262/}{significant factor in outcome disparities}. Pointers were staring us in the face early, with \href{https://twitter.com/TheBMA/status/1271768163630428160?s=20}{94 percent of British doctor deaths of BAME background}. The fact that our authorities have failed to address this, given the crushing risk benefit ratio is absolutely unexplainable. Unless of course the profit driven vaccines only narrative is taken into account. 
+
 \subsection*{Vaccines}
+
+Vaccines have undeniably been a valuable tool in fighting the pandemic. Their effectiveness in preventing severe forms of COVID-19 and lowering hospitalisation and death is clear. There is however a strong basis for suggesting that the policy of total and repeated vaccination as implemented in western countries is counter productive. This has been defended by a wide range of scientists and doctors and systematically silenced, censored in order to preserve the weakening mainstream narrative. Anyone showing any reserve whatsoever to the enforced repeated vaccination of every single citizen over the age of 5 as the only possible measure against COVID-19 is systematically labelled as antivax, when most of the serious criticism has come from people who are vaccinated. This is comparable to labelling Whisky enthusiasts anti Whisky because they do not support the idea of forcing everyone to drink Whisky and only Whisky.
+
+Natural immunity has been shown to be superior to vaccines by the \href{https://www.cdc.gov/mmwr/volumes/71/wr/mm7104e1.htm#F1_down}{CDC's own data}, supporting many other studies (\cite{Gazit2021.08.24.21262415}, \cite{doi:10.1126/science.abf4063}, \cite{Goldberg2021.04.20.21255670}) going back to early 2021. These studies have provided ample evidence that vaccination should not be mandated for people with previous COVID-19 infections, in particular when taking into account the studies which show more severe vaccination side effects for patients with a prior infection (\cite{Monforte2021}, \cite{LI20221082}, \cite{Raw22}). Many have advocated for stratifying vaccine policy by age group or risk factors associated with comorbidities. This is justified when taking into information which was squeezed out of our authorities through freedom of information acts. The first showed that \href{https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi/averageageofthosewhohaddiedwithcovid19}{the average age of death due to COVID-19 in the UK is 83} which is above life expectancy. The second that out of the over 137000 people who had died from COVID-19 up to and including Q3 2021, \href{https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi/deathsfromcovid19withnootherunderlyingcauses}{only 17400 had no additional underlying condition of which 3800 where under 65}. Suddenly the risk benefit ratio for healthy under 65 year olds becomes more debatable. Massively increased risks of myocarditis especially in young males \cite{10.1001/jama.2021.24110} is just one of many indicators which point away from a one size fits all approach.
+
+
+Vaccine risks are a very shady area and are essentially blacked out by mainstream media. The decision as to whether for any individual the risk outweighs the cost is delegated to institutions which have otherwise clearly demonstrated their conflicts of interest. The fact that \href{https://www.cnbc.com/2020/12/16/covid-vaccine-side-effects-compensation-lawsuit.html}{Pfizer and Moderna} have been given \href{https://crsreports.congress.gov/product/pdf/LSB/LSB10443}{complete immunity} by the Federal government means they can dispense with precautionary measures at leisure, with no incentive to reduce vaccination scope. Over 12600 deaths have been \href{https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/adverse-events.html}{reported through VAERS}, a number which has been described as both a massive underestimate and overestimate. What is certain is that they are not explicit about the investigation procedure to identify the potential role of vaccines, and how they are coping with the enormous investigative work rate. 
+
 
 \subsection*{Origins}
 
+
+%Retraction
+%https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258935
+
+%Ridicule of outpatient care 
+%https://abcnews.go.com/Health/controversial-doctor-group-touts-ivermectin-long-covid-treatment/story?id=82967318
+
+%Gilead complaint
+%https://www.gilead.com/-/media/gilead-corporate/files/pdfs/company-statements/gilead-statement-on-solidarity-trial-final-clean.pdf?la=en
+
+%Remdesevir outpatient
+%https://www.fda.gov/news-events/press-announcements/fda-takes-actions-expand-use-treatment-outpatients-mild-moderate-covid-19
+
+%Gilead profits
+%https://www.beckershospitalreview.com/pharmacy/gilead-saw-5-6b-in-remdesivir-sales-last-year.html
+
+%RTU refusée
+%https://ansm.sante.fr/actualites/lansm-publie-sa-decision-sur-la-demande-de-rtu-pour-livermectine-dans-la-prise-en-charge-de-la-maladie-covid-19
+
+ \bibliographystyle{ametsoc2014}
+ \bibliography{main}
+
 \end{document}
+
+
