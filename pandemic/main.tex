@@ -4,12 +4,10 @@
 \documentclass[11pt,a4paper]{report}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-%\usepackage{gentium}
 \usepackage{mathptmx} % Use Times Font
-
-
 \usepackage[pdftex]{graphicx} % Required for including pictures
 \usepackage[pdftex,linkcolor=blue,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+\usepackage[all]{hypcap}
 \usepackage{calc} % To reset the counter in the document after title page
 \usepackage{enumitem} % Includes lists
 \usepackage[autostyle]{csquotes}
@@ -21,7 +19,7 @@
 
 \frenchspacing % No double spacing between sentences
 \linespread{1.2} % Set linespace
-\usepackage[a4paper, lmargin=0.13\paperwidth, rmargin=0.13\paperwidth, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry} %margins
+\usepackage[a4paper, lmargin=0.1\paperwidth, rmargin=0.1\paperwidth, tmargin=0.08\paperheight, bmargin=0.09\paperheight]{geometry} %margins
 %\usepackage{parskip}
 
 \usepackage[all]{nowidow} % Tries to remove widows
@@ -34,6 +32,7 @@
 \graphicspath{ {./images/} }
 
 \usepackage[square,numbers]{natbib}
+\usepackage[center]{caption}
 
 \title{How I Lost Faith in our Institutions}
 \author{Jonathan B. A. Thorpe}
@@ -58,7 +57,7 @@ citecolor=[rgb]{0,0.5,0.5}
 %-----------------------
 % Begin document
 %-----------------------
-\begin{document} %All text i dokumentet hamnar mellan dessa taggar, allt ovanför är formatering av dokumentet
+\begin{document} 
 
 \maketitle
 
@@ -66,13 +65,15 @@ citecolor=[rgb]{0,0.5,0.5}
 
 I used to believe that all this was inevitable, that we did our best. There were costly mistakes made along the way, but things were complicated. We locked down, we rolled out vaccines as soon as possible, and started pressuring people to take them. It was for the good of all. It was the only way. I’ve changed, I think we could have done so much better, and when this all happens again we need to do better. 
 
-It started in the summer of 2021, I heard an episode of the Joe Rogan Experience with Bret Weinstein and Pierre Kory who were talking about repurposed drugs for prophylaxis and therapeutics, which supposedly had the power to end the pandemic whenever we chose to deploy it at scale. I was sceptical, surely we would have done it if we could. I put it in a corner of my mind. I’d been listening to Bret Weinstein speaking on a broad range of topics for a while, and he always impressed me with his refreshing combination of open mindedness and careful, serious scientific rigour. In a world which seemed to loose it’s grip his felt like a voice of reason, striking nuance between the extremes. After reading a number of articles which seemed to categorically discard Ivermectin as a potential help, I decided to forget about it. Even Merck who manufacture the drug said it didn’t work and warned against using it. Bret Weinstein could be wrong, like everyone, and on this one he probably was.
+It started in the summer of 2021, I heard an \href{https://open.spotify.com/episode/7uVXKgE6eLJKMXkETwcw0D?si=AwYzUSIpRsGisRkZq_qQXw}{episode} of the Joe Rogan Experience with Bret Weinstein and Pierre Kory\footnote{Pierre Kory was the critical care service chief at the UW Health University Hospital (part of the University of Wisconsin School of Medicine and Public Health) until May 2020. He lost his job over his promotion of off-patent drugs for the treatment of COVID-19.} who were talking about repurposed drugs for prophylaxis and therapeutics, which supposedly had the power to end the pandemic whenever we chose to deploy it at scale. I was sceptical, surely we would have done it if we could. I put it in a corner of my mind. I’d been listening to Bret Weinstein speaking on a broad range of topics for a while, and he always impressed me with his refreshing combination of open mindedness and careful, serious scientific rigour. In a world which seemed to loose it’s grip his felt like a voice of reason, striking nuance between the extremes. After reading a number of articles which seemed to categorically discard Ivermectin as a potential help, I decided to forget about it. Even Merck who manufacture the drug said it didn’t work and warned against using it. Bret Weinstein could be wrong, like everyone, and on this one he probably was.
 
-A few month later I heard that Oxford University had \href{https://www.bbc.com/news/health-57570377}{added Ivermectin to their PRINCIPLE trial}. I started wondering why, this drug which I’d read was not only useless in treating COVID-19, but was also dangerous and used as a horse dewormer would be investigated by extremely competent people. So I went back to the episode I heard, and listened to a few more episodes including Robert Malone and Peter McCollough. These people were described by the mainstream media as spreading misinformation and yet seemed extremely intelligent, well meaning and could not have been more qualified. So I decided to start systematically fact checking them, as well as the dominant narratives. It was quite a ride, and overall they have proved to be the most valuable source of information I’ve had throughout this pandemic.
+A few month later I heard that Oxford University had \href{https://www.bbc.com/news/health-57570377}{added Ivermectin to their PRINCIPLE trial}. I started wondering why, this drug which I’d read was not only useless in treating COVID-19, but was also dangerous and used as a horse dewormer would be investigated by extremely competent people. So I went back to the episode I heard, and listened to a few more episodes including \href{https://open.spotify.com/playlist/0ZCLBEbktYqp1lSheZS81E?si=5ad3d9f833804821}{Robert Malone}\footnote{See Robert W Malone's scientific credentials on his \href{https://scholar.google.com/citations?user=Jf1bApYAAAAJ&hl=en}{Google Scholar profile}, he holds nine patents on mRNA vaccine technology and has raised concerns on their safety. He has strongly promoted the use of off-patent drugs for the treatment of COVID-19.} and \href{https://open.spotify.com/episode/0aZte37vtFTkYT7b0b04Qz?si=a1uycZk4RduXt09K0sHPng}{Peter McCollough}\footnote{See Peter A McCullough's scientific credentials on his \href{https://scholar.google.com/citations?hl=en&user=LzqEaOkAAAAJ}{Google Scholar profile}, he is a board-certified cardiologist who has testified before committees of the US and Texas Senates regarding the patient treatment of COVID-19 using off-patent drugs.}. These people were described by the mainstream media as spreading misinformation and yet seemed extremely intelligent, well meaning and could not have been more qualified. So I decided to start systematically fact checking them, as well as the dominant narratives. It was quite a ride, and overall they have proved to be the most valuable source of information I’ve had throughout this pandemic.
+
+I am now convinced that the COVID-19 pandemic has witnessed the most serious case of corporate misbehaviour backed by hijacked government institutions, health and scientific authorities, and the biggest propaganda machine ever seen on legacy and social media. Ordinary people have paid an unspeakable price which could have been mostly avoided. I hope to convince as many as possible to reconsider their views if they are aligned with the mainstream narrative, which has been woven not to benefit the health and wellbeing of the people, but to maximise corporate profits. Once you see the pattern emerging, you cannot look away. This document merely skims the surface, and I hope you will be encouraged to look deeper.
 
 \section*{The only solutions were the ones we were allowed}
 
-It was early 2020, the waves were coming, people panicked. Hospitals were getting overloaded with people who were struggling to breathe, they needed ventilators, they were dying. There was a rush to find effective treatments and therapeutics, mountains of data from around the world was pouring in with many promising leads. The decisions however were not to be made or influenced by doctors and physicians in hospitals and clinics who knew this new disease better than anyone. Instead they were made by a handpicked few, with strong ties to the pharmaceutical industry. The bar for recommendation was set. It was to be large centralised randomised double blind trials, not accumulated experience by people on the front line.
+It was early 2020, the waves were coming, people panicked. Hospitals were getting overloaded with people who were struggling to breathe, they needed ventilators, they were dying. There was a rush to find effective treatments and therapeutics, mountains of data from around the world was pouring in with many promising leads. The decisions however were not to be made or influenced by doctors and physicians in hospitals and clinics who knew this new disease better than anyone. Instead they were made by a handpicked few, with strong ties to the pharmaceutical industry\footnote{In COVID-19 Treatment Guidelines Panel Financial Disclosure for Companies Related to COVID-19 Treatment or Diagnostics \cite{nihTreatmentPanelFinancialDisclosure}, \textit{Gilead} (behind Remdesivir) appears 7 times, \textit{Pfizer} 3 times, \textit{Merck} 7 times, \textit{AstraZeneca} 3 times. In France the influence of Big Pharma in validating Remdesivir was also clear \cite{doi:10.1177/1440783320936740}, \cite{mediapart31032020}}. The bar for recommendation was set. It was to be large centralised randomised double blind trials, not accumulated experience by people on the front line.
 
 These large trials are expensive, tens of millions of dollars. The only entities capable of running them  fast enough were corporate pharmaceutical giants with obvious conflicts of interest. Profits often at odds with patient wellbeing. Remdesivir won the race after mediocre results which were made barely statistically significant by a large sample size, in a study largely funded by tax payer money for private benefits. Safety protocols were short circuited and an emergency authorisation was given by the FDA. It was then enforced as the recommended treatment with a price tag of thousands of dollars per patient. Doctors and physicians across the US and much of the western world had their hands tied by central medical authorities and piloting committees. 
 
@@ -88,9 +89,9 @@ Mounting evidence against systematic repeated total vaccination and any informat
 
 While we were busy worrying about when the vaccines would finally save us, elsewhere around the world people knew they could only count on themselves. Although they could, of course, also count on the WHO and the FDA to spread their corporate driven Remdesivir recommendations and vaccine fanaticism with great effect, some decided to take matters in their own hands. None of this has pierced through the western media firewall, but the information is easily discoverable if you know what to look for.
 
-Uttar Pradesh (the most populous state in India) replicated results from numerous small scale studies showing insanely good results for prophylactic Ivermectin and Vitamin D and decided to base their approach on these results using targeted med-kits for positive tests and contact cases (the \href{https://www.aiims.edu/en.html}{AIIMS} lent their support \cite{Behera2021-qu}). Their government declared that this helped them keep mortality down to an astounding extent \cite{indianexpress12052021}. They were \href{https://www.who.int/india/news/feature-stories/detail/uttar-pradesh-going-the-last-mile-to-stop-covid-19}{praised by the WHO} who referred to their med-kits without referring to what was inside \cite{medicalupdateonline21052021} \cite{hindu14092020}, presumably because it went against their \href{https://www.who.int/news-room/feature-stories/detail/who-advises-that-ivermectin-only-be-used-to-treat-covid-19-within-clinical-trials}{own recommendations}. Although Uttar Pradesh is less vaccinated and more densely populated than the second most populous state in India (Maharashtra), their mortality rate is 11 times lower overall and has been throughout the pandemic. They have essentially flattened COVID-19 \cite{hindustantimes19092021}. This was not considered worth any attention by our scientific, pharmaceutical, media and governmental institutions. An irrational reaction by any measure.
+Uttar Pradesh (the most populous state in India) replicated results from numerous small scale studies showing outstanding results for prophylactic Ivermectin and Vitamin D and decided to base their approach on these results using targeted med-kits for positive tests and contact cases (the \href{https://www.aiims.edu/en.html}{AIIMS} lent their support \cite{Behera2021-qu}). Their government declared that this helped them keep mortality down to an astounding extent \cite{indianexpress12052021}. They were \href{https://www.who.int/india/news/feature-stories/detail/uttar-pradesh-going-the-last-mile-to-stop-covid-19}{praised by the WHO} who referred to their med-kits without referring to what was inside \cite{medicalupdateonline21052021} \cite{hindu14092020}, presumably because it went against their \href{https://www.who.int/news-room/feature-stories/detail/who-advises-that-ivermectin-only-be-used-to-treat-covid-19-within-clinical-trials}{own recommendations}. Although Uttar Pradesh is slightly less vaccinated and more densely populated than the second most populous state in India (Maharashtra), their mortality rate is \hyperref[fig:india-stats]{11 times lower} overall and has been throughout the pandemic. They have essentially flattened COVID-19 \cite{hindustantimes19092021}. This was not considered worth any attention by our scientific, pharmaceutical, media and governmental institutions, rare mainstream media coverage focused on baselessly discrediting Ivermectin \cite{torontoStar28012022}. An irrational reaction by any measure.
 
-Elsewhere in India, the two states of Uttarakhand and Kerala gave us a natural experiment of unusual magnitude. Uttarakhand decided to deploy prophylactic Ivermectin as a response to the Delta wave in may 2021 \cite{economictimes12052021}, their daily mortality went down to zero within two month and has essentially stayed there ever since. Kerala conversely was \href{https://dhs.kerala.gov.in/wp-content/uploads/2021/04/Kerala-State-COVID-19-guidelines-Version-3.pdf}{using Ivermectin up to summer 2021} to great effect, when they succumbed to pressure from the WHO, the NIH and the FDA in the middle of the Delta wave. They dropped their protocol it in favour of the expensive and ineffective Remdesivir \cite{hindu06082021}. Their mortality rate has exploded and remained extremely high ever since. No one at the WHO thought this was an indication that their recommendation might have been a factor.   
+Elsewhere in India, the two states of Uttarakhand and Kerala gave us a natural experiment of unusual magnitude. Uttarakhand decided to deploy prophylactic Ivermectin as a response to the Delta wave in may 2021 \cite{economictimes12052021}, their daily mortality went down to zero within two month and has essentially stayed there ever since. Kerala conversely was \href{https://dhs.kerala.gov.in/wp-content/uploads/2021/04/Kerala-State-COVID-19-guidelines-Version-3.pdf}{using Ivermectin up to summer 2021} to great effect, when they succumbed to pressure from the WHO, the NIH and the FDA in the middle of the Delta wave. They dropped their protocol it in favour of the expensive and ineffective Remdesivir \cite{hindu06082021}. Their mortality rate has \hyperref[india-kerala-mortality]{exploded and remained extremely high ever since}. No one at the WHO thought this was an indication that their recommendation might have been a factor.   
 
 Peru offered another large scale real world experiment in ivermectin deployment \cite{Chamie2021}. The mortality for over 60 year olds was cut 14 fold in three month after the introduction of ivermectin, then jumped back up 13 fold once the new president restricted its use. Per state analysis for 25 states showed the effects to be tied to deployment date and quantity with a very high significance. Africa, where a number of countries have been using ivermectin systematically for over 35 years to treat an array of different tropical diseases to great effect provided an accidental demonstration of ivermectin’s effectiveness. Based on a comparative study of African state which used and didn’t use ivermectin for treating other illnesses \cite{Tanioka2021.03.26.21254377}, the chairman of the Tokyo Metropolitan Medical Association decided to \href{https://www.tokyo-np.co.jp/article/123988}{allow doctors to use ivermectin off label} (while not officially recommending it as it would be in direct defiance of the WHO recommendations) to deal with an uncontrollable situation.
 
@@ -157,9 +158,9 @@ The left is meant to defend the weak and the vulnerable against the abuses of co
 The reason we were imposed vaccination and lockdowns as only solution is simple, it generated immense wealth for those who took the decisions. An inter-mangled web spanning the pharmaceutical companies, hijacked top command of government agencies and academic institutions, social and legacy media and business magnates. Cheap, effective, highly available treatments were a hindrance and the stakes where high enough that no cost was too great to prevent them from taking hold. The systematic demonisation, censorship, discrediting tactics were in plain sight and were justified by appealing to the moral obligation to ensure the health of our citizens and the desaturation of the hospitals. This justification is absurd, if that was their aim they would have:
 
 \begin{itemize}
-  \item Financed large randomised trials for the off-patent drugs which showed huge promise in order to resolve their \textit{unproven} status, and reported when their efficacy was essentially unarguable. With ripple effects throughout the world.
-  \item Supported systematic information campaigns for nutritional supplements which were well documented to massively reduce severe COVID-19, with zero associated risks, particularly in vulnerable communities.
   \item Supported doctors and scientists to participate in a crowd sourcing effort to find effective solutions rather than delegate the decision to small groups of people with gigantic conflicts of interests.
+  \item Financed large randomised trials for the off-patent drugs which showed huge promise in order to resolve their \textit{unproven} status, and reported when their efficacy was essentially unarguable. With ripple effects throughout the world.
+  \item Supported systematic information campaigns for nutritional supplements which were well documented to massively reduce severe COVID-19, with essentially zero associated risks, particularly in vulnerable communities.
   \item Immediately and continuously released all data concerning vaccine safety and effectiveness to be scrutinised by medical professionals in order to transparently investigate issues and determine proper utilisation.
   \item Monitored the situation in different countries and states around the world, identifying and tracking the many successful strategies in order to replicate them and noting the abysmal relative failure of the west.
   \item Properly investigated the potential man-made origins of SARS-CoV-2 instead of dismissing them, and had a transparent release of the research which was funded in Wuhan. An informed debate about whether the risk benefit ratio is adequate, noting that in the case of an outbreak the benefits are for deciders and the risks for the vulnerable.
@@ -167,28 +168,55 @@ The reason we were imposed vaccination and lockdowns as only solution is simple,
 
 They did none of that, they in fact systematically, consistently did the complete opposite because the objective was not our health, but their profits. Once you see the pattern you cannot look away. It's just power systems doing their usual thing, distorting information, corrupting, bullying in order to maximise revenues. It was applied on autopilot in the context of a world pandemic and the destruction and suffering which resulted is orders of magnitude higher. This needs to come out and be fixed, I trust that this will not be a scandal like any other, that things will change and that we will come out stronger. Coming to terms with the idea that our institutions are entirely inept and counter productive may force us to take our destinies in our own hands and wake up to the importance of fighting for deserving leadership.
 
-\appendix
+\section*{Appendix}
 
-\chapter{}
+\subsection*{COVID-19 statistics in India}
 
-\section*{COVID-19 statistics in India}
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=0.7\textwidth]{india-states-mortality}
+%    \caption{Cumulative mortality in individual Indian states (March 12, 2022)}
+%    \label{fig:india-states-mortality}
+%\end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.7\textwidth]{india-states-mortality}
-    \caption{Cumulative mortality in individual Indian states}
-    \label{fig:mesh1}
+    \includegraphics[width=1\textwidth]{india-stats}
+    \caption{Statistics by state (Febuary 12, 2022), vaccination numbers obtained from \cite{statistaIndiaVaccination}, deaths and cases obtained from \href{https://github.com/CSSEGISandData/COVID-19}{JHU CSSE COVID-19 Data} (Google visualisation)}
+    \label{fig:india-stats}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{india-uttarpradesh-mortality}
-    \caption{Uttar Pradesh mortality}
-    \label{fig:mesh1}
+    \caption{Uttar Pradesh mortality from \href{https://github.com/CSSEGISandData/COVID-19}{JHU CSSE COVID-19 Data} (Google visualisation)}
+    \label{fig:india-uttarpradesh-mortality}
 \end{figure}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{india-maharashtra-mortality}
+    \caption{Maharashtra mortality from \href{https://github.com/CSSEGISandData/COVID-19}{JHU CSSE COVID-19 Data} (Google visualisation)}
+    \label{fig:india-maharashtra-mortality}
+\end{figure}
 
-\chapter{COVID-19 study in Peru}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{india-uttarakhand-mortality}
+    \caption{Uttarakhand mortality from \href{https://github.com/CSSEGISandData/COVID-19}{JHU CSSE COVID-19 Data} (Google visualisation)}
+    \label{fig:india-uttarakhand-mortality}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{india-kerala-mortality}
+    \caption{Kerala mortality from \href{https://github.com/CSSEGISandData/COVID-19}{JHU CSSE COVID-19 Data} (Google visualisation source)}
+    \label{fig:india-kerala-mortality}
+\end{figure}
+
+\clearpage
+
+\subsection*{COVID-19 study in Peru}
 
 
 
